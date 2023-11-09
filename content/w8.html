@@ -1,0 +1,449 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>cmsite</title>
+        <meta charset="utf-8">
+<meta property="head" content="H1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <!-- for Wink3 客製化關閉 -->
+        <!--
+        <link rel="stylesheet" type="text/css" href="./../cmsimde/static/winkPlayer.css" />
+        <script type="text/javascript" src="./../cmsimde/static/winkPlayer.js"></script>
+        -->
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPowerShell.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushMojo.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushRust.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container">
+                <div class="row align-items-center">
+                <h1>41123224</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">41123224</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">SMap</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='關於.html'>關於</a><li><a href='布萊頓.html'>布萊頓</a><li class='has-children'><a href='w4~w5.html'>w4~w5</a><ul class='dropdown'><li><a href='西門子.html'>西門子</a><li><a href='預覽作品.html'>預覽作品</a><li><a href='歐特克.html'>歐特克</a><li><a href='正溫度係數.html'>正溫度係數</a></li></ul><li class='has-children'><a href='W6-W7.html'>W6-W7</a><ul class='dropdown'><li><a href='WIN11.html'>WIN11</a></li></ul><li><a href='w8.html'>w8</a><li><a href='w9.html'>w9</a><li class='has-children'><a href='繪圖.html'>繪圖</a><ul class='dropdown'><li><a href='組成圖：.html'>組成圖：</a><li class='has-children'><a href='部分部分圖：.html'>部分部分圖：</a><ul class='dropdown'><li><a href='Onshape類似零組件.html'>Onshape類似零組件</a></li></ul><li><a href='繪圖心得：.html'>繪圖心得：</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">WIN11 << <a href='WIN11.html'>Previous</a> <a href='w9.html'>Next</a> >> w9<br /><h1>w8</h1>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">針對 Coppeliasim 4.6.0 版本的發布：</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">CoppeliaSim於2023.10.21 推出</span></span></span></span></span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/versionInfo.htm"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">4.6.0版本</span></span></span></span></span></span></a><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">。</span></span></span></span></span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">（因為更改不了，目前可以沿用4.5.1 rev4，但仍然必須關注CoppeliaSim系統逐步強化Python腳本的趨勢（</span></span></span></span></span></span><span style="vertical-align: inherit;"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">1,2 </span></span></span></span></span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/luaPythonDifferences.htm"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">）</span></span></span></span></span></span></a><span style="vertical-align: inherit;"><a href="https://www.coppeliarobotics.com/helpFiles/en/coppeliaSimLibrary.htm#pythonClient"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">，</span></span></span></span></span></a><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">其能夠在機電方面更重要場景中，導入更多的AI相關訓練）</span></span></span></span></span></span><span><span><span> </span><span style="vertical-align: inherit;"></span><span> </span></span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/coppeliaSimLibrary.htm#pythonClient"><span><span><span style="vertical-align: inherit;"></span></span></span></a><span><span><span style="vertical-align: inherit;"></span></span></span></p>
+<p><a href="https://www.coppeliarobotics.com/helpFiles/en/plugins.htm"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">插件</span></span></span></span></span></span></a><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">架構更新，可載入或卸載插件</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">sim.setThreadAutomaticSwitch 已棄用，取而代之的是</span></span></span></span></span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/regularApi/simSetStepping.htm"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">sim.setStepping</span></span></span></span></span></span></a></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">sim.switchThread 已被廢棄，取而代之的是</span></span></span></span></span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/regularApi/simStep.htm"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">sim.step</span></span></span></span></span></span></a></p>
+<p><a href="https://www.coppeliarobotics.com/helpFiles/en/commandLine.htm"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">命令列</span></span></span></span></span></span></a><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">選項 -H 現在載入 CoppeliaSim 庫的無頭版本。</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">CoppeliaSim 使用手冊：</span></span></span></span></span></span><a href="https://mde.tw/pjcopsim"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">https://mde.tw/pjcopsim</span></span></span></span></span></span></a></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">zmq 遠端 API：</span></span></span></span></span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/zmqRemoteApiOverview.htm"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">https://www.coppeliarobotics.com/helpFiles/en/zmqRemoteApiOverview.htm</span></span></span></span></span></span></a></p>
+<p><a href="https://github.com/CoppeliaRobotics/zmqRemoteApi"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">https://github.com/CoppeliaRobotics/zmqRemoteApi</span></span></span></span></span></span></a></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">適用於IPv6的CoppeliaSim 4.5.1：</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">下載</span></span></span></span></span></span><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EfEaYO4E4eBGtTV3QBCP0f0B3JBfrw11LslWmQyqZB75fw?e=Zf7hCp"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">CoppeliaSimEdu_4.5.1_rev4_for_cd2023.7z</span></span></span></span></span></span></a><span style="vertical-align: inherit;"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"> (需下載密碼)</span></span></span></span></span></span><span><span><span> </span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">下載</span></span></span></span></span></span><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EVV3NaesdDdNqcoD3xAo96gBqGG4gEJFPknOIt7EfofGlg?e=OfQ4qo"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">zmqRemoteAPI Python for cad2023.7z</span></span></span></span></span></span></a><span style="vertical-align: inherit;"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"> (需下載密碼)</span></span></span></span></span></span><span><span><span> </span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"></span></span></span></span></span></p>
+<hr/>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">有關 s1511.cycu.org 主機的使用，也可以參考</span></span></span></span></span></span><a href="https://mde.tw/cpnote"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">https://mde.tw/cpnote</span></span></span></span></span></span></a><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">中各章節內容頁。</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">維護網站的語音方式：</span></span></span></span></span></span></p>
+<ol>
+<li><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">localhost令牌，SSH決定git推送權限，SSH設定可設定Putty</span></span></span></span></span></span></li>
+<li><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">Replit connect 功能連結與 Github 的權限</span></span></span></span></span></span></li>
+<li><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">自架主機s1511.cycu.org，利用SSH與分配連接埠號</span></span></span></span></span></span></li>
+</ol>
+<hr/>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">以下將說明第3種方法，使用s1511.cycu.org管理個人與資料夾網站：</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">其中包括1）</span></span></span></span></span></span><span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">如何退出登錄</span></span></span></span></span></span></span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">、2）</span></span></span></span></span></span><span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">如何取放文件</span></span></span></span></span></span></span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">、3）</span></span></span></span></span></span><span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">如何與github帳號用戶信任</span></span></span></span></span></span></span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">、4）</span></span></span></span></span></span><span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">如何連接cad2023、5</span></span></span></span></span></span></span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">）</span></span></span></span></span></span><span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">如何啟動或關閉cad2023文件</span></span></span></span></span></span></span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">、6）</span></span></span></span></span></span><span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">如何鏈接到動態網站</span></span></span></span></span></span></span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">、7 </span></span></span></span></span></span><span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">）設置靜態網站</span></span></span></span></span></span></span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">、8）</span></span></span></span></span></span><span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">如何與靜態網頁改版連動動態網站</span></span></span></span></span></span></span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">、9）</span></span></span></span></span></span><span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">如何對資料進行保護</span></span></span></span></span></span></span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">以及10）東南亞</span></span></span></span></span></span><span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">網路連線</span></span></span></span></span></span></span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">等。</span></span></span></span></span></span></p>
+<p><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EV9_amTTTJlLo4Xu5Hj-iR0BXMY_nn_zmcE7ynKV_aGbpw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0RpcmVjdCJ9fQ&amp;e=7UL9k9"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">w8_2a_s1511 設定操作影片part1.mp4</span></span></span></span></span></span></a></p>
+<p><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EcHihSEDROlEg7PrHMrBcRsBzYuLtGvcg5t359aa6IL8lw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0RpcmVjdCJ9fQ&amp;e=wMzccG"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">w8_2a_s1511 設定操作影片part2.mp4</span></span></span></span></span></span></a></p>
+<p><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EfPRpEEeDG5GiUhiJvVtbbkBL3I5eJsre7J_wk2JOivJ_w?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0RpcmVjdCJ9fQ&amp;e=fJ15QD"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">w8_2a_s1511 設定操作影片part3.mp4</span></span></span></span></span></span></a><span style="vertical-align: inherit;"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">  (只有前段有聲音)</span></span></span></span></span></span><span><span><span> </span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"></span></span></span></span></span></p>
+<p><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EbN6kKaMNqZFhbWxOLxJH8MBPTxN3vPo8u9ElJRe4AoPCA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0RpcmVjdCJ9fQ&amp;e=RNOXjB"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">w8 2a s1511 設定操作影片part4.mp4</span></span></span></span></span></span></a></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">1)</span></span></span></span></span></span><span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">如何登入終端機</span></span></span></span></span></span></span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">：</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">終端登錄 s1511.cycu.org (僅支援 IPv6 網路協定), 命令列指令 ssh 用戶端, 工具可以使用 Putty</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">使用 ssh 指令：ssh 帳號@s1511.cycu.org 然後輸入密碼（輸入密碼時螢幕不會並顯示字元）</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">使用 putty.exe 設定會話令其連接到 s1511.cycu.org</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">登出指令為 exit</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">假設在 IPv4 網路協定下，則 ssh 指令與 putty.exe 都必須能夠支援 IPv6 的代理主機進行連線。</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">2b w8作業：請根據 </span></span></span></span></span></span><a href="https://mde.tw/cadnote/downloads/cad2023_2b_w8.txt"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">cad2023_2b_w8.txt</span></span></span></span></span></span></a><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"> 檔案中的內容，跨程式的讀取與課篩選，根據時間底部，啟動2b修改習營中已經登錄s1511.cycu.org的學號。(修改課名單</span></span></span></span></span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">2a  </span></span></span></span></span></span><span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">:  </span></span></span></span><span> </span></span></span></span><a href="https://stud.cycu.org:8800/?semester=1121&amp;courseno=0838&amp;column=True"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">0838 </span></span></span></span><span> </span></span></span></a><span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">，2b：  </span></span></span></span><span> </span></span></span></span><a href="https://stud.cycu.org:8800/?semester=1121&amp;courseno=0851&amp;column=True"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">0851</span></span></span></span></span></span></a><span style="vertical-align: inherit;"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">）</span></span></span></span></span></span><span><span><span> </span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">假設在近端處理，必須同時儲存兩個檔案後，進行資料共享：</span></span></span></span></span></span></p>
+<p><a href="https://mde.tw/cadnote/downloads/get_stud_num_from_last_data.py"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">get_stud_num_from_last_data.py</span></span></span></span></span></span></a><span style="vertical-align: inherit;"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">  (若採 Brython 編寫，直接可以</span></span></span></span></span><a href="https://mde.tw/cadnote/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/9215c7c160119721ded887018cda8f4e/raw/f9f2fd6819ae9553d51990901aa694073d51439a/get_stud_num_from_last_data.py"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">上市 2b w8 結果</span></span></span></span></span></a><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"> ( </span></span></span></span></span><a href="https://mde.tw/cadnote/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/9215c7c160119721ded887018cda8f4e/raw/b38df54adfd23345dcf6e0888002ea14df165968/get_stud_from_2a_last.py"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">2a w8 結果</span></span></span></span></span></a><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">),迭代進入時間前期排序，其中 41123227 為管理員初步測試時登錄，若採用 ANSI 編寫: </span></span></span></span></span><a href="https://mde.tw/cadnote/downloads/c_parse_last_cp2023.7z"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">c_parse_last_cp2023.7z</span></span></span></span></span></a><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"> )</span></span></span></span></span></span><span><span><span> </span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"></span></span></span></span></span><a href="https://mde.tw/cadnote/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/9215c7c160119721ded887018cda8f4e/raw/f9f2fd6819ae9553d51990901aa694073d51439a/get_stud_num_from_last_data.py"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"></span></span></span></span></span></a><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"></span></span></span><span> </span></span></span><a href="https://mde.tw/cadnote/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/9215c7c160119721ded887018cda8f4e/raw/b38df54adfd23345dcf6e0888002ea14df165968/get_stud_from_2a_last.py"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"></span></span></span></span></span></a><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"></span></span></span><span> </span></span></span><a href="https://mde.tw/cadnote/downloads/c_parse_last_cp2023.7z"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"></span></span></span></span></span></a><span><span><span> </span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"></span></span></span></span></span></p>
+<div>
+<div class="syntaxhighlighter py" id="highlighter_928605">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">1</span></span></span></span></span></span></div>
+<div class="line number2 index1 alt1"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">2</span></span></span></span></span></span></div>
+<div class="line number3 index2 alt2"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">3</span></span></span></span></span></span></div>
+<div class="line number4 index3 alt1"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">4</span></span></span></span></span></span></div>
+<div class="line number5 index4 alt2"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">5</span></span></span></span></span></span></div>
+<div class="line number6 index5 alt1"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">6</span></span></span></span></span></span></div>
+<div class="line number7 index6 alt2"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">7</span></span></span></span></span></span></div>
+<div class="line number8 index7 alt1"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">8</span></span></span></span></span></span></div>
+<div class="line number9 index8 alt2"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">9</span></span></span></span></span></span></div>
+<div class="line number10 index9 alt1"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">10</span></span></span></span></span></span></div>
+<div class="line number11 index10 alt2"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">11</span></span></span></span></span></span></div>
+<div class="line number12 index11 alt1"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">12</span></span></span></span></span></span></div>
+<div class="line number13 index12 alt2"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">13</span></span></span></span></span></span></div>
+<div class="line number14 index13 alt1"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">14</span></span></span></span></span></span></div>
+<div class="line number15 index14 alt2"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">15</span></span></span></span></span></span></div>
+<div class="line number16 index15 alt1"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">16</span></span></span></span></span></span></div>
+<div class="line number17 index16 alt2"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">17號</span></span></span></span></span></span></div>
+<div class="line number18 index17 alt1"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">18</span></span></span></span></span></span></div>
+<div class="line number19 index18 alt2"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">19</span></span></span></span></span></span></div>
+<div class="line number20 index19 alt1"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">20</span></span></span></span></span></span></div>
+<div class="line number21 index20 alt2"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">21</span></span></span></span></span></span></div>
+<div class="line number22 index21 alt1"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">22</span></span></span></span></span></span></div>
+<div class="line number23 index22 alt2"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">23</span></span></span></span></span></span></div>
+<div class="line number24 index23 alt1"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">24</span></span></span></span></span></span></div>
+<div class="line number25 index24 alt2"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">25</span></span></span></span></span></span></div>
+<div class="line number26 index25 alt1"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">26</span></span></span></span></span></span></div>
+<div class="line number27 index26 alt2"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">27</span></span></span></span></span></span></div>
+<div class="line number28 index27 alt1"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">28</span></span></span></span></span></span></div>
+<div class="line number29 index28 alt2"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">29</span></span></span></span></span></span></div>
+<div class="line number30 index29 alt1"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">30</span></span></span></span></span></span></div>
+<div class="line number31 index30 alt2"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">31</span></span></span></span></span></span></div>
+<div class="line number32 index31 alt1"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">32</span></span></span></span></span></span></div>
+<div class="line number33 index32 alt2"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">33</span></span></span></span></span></span></div>
+<div class="line number34 index33 alt1"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">34</span></span></span></span></span></span></div>
+<div class="line number35 index34 alt2"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">35</span></span></span></span></span></span></div>
+<div class="line number36 index35 alt1"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">36</span></span></span></span></span></span></div>
+<div class="line number37 index36 alt2"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">37</span></span></span></span></span></span></div>
+<div class="line number38 index37 alt1"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">38</span></span></span></span></span></span></div>
+<div class="line number39 index38 alt2"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">39</span></span></span></span></span></span></div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="py comments"># 讀取學號檔案&lt;font&gt;&lt;/font&gt;</code></div>
+<div class="line number2 index1 alt1"><code class="py plain">with </code><code class="py functions">open</code><code class="py plain">(</code><code class="py string">"2b_user_list.txt"</code><code class="py plain">, </code><code class="py string">'r'</code><code class="py plain">) as user_file:&lt;font&gt;&lt;</code><code class="py keyword">/</code><code class="py plain">font&gt;</code></div>
+<div class="line number3 index2 alt2"><code class="py spaces">    </code><code class="py plain">user_lines </code><code class="py keyword">=</code> <code class="py plain">user_file.read().splitlines()&lt;font&gt;&lt;</code><code class="py keyword">/</code><code class="py plain">font&gt;</code></div>
+<div class="line number4 index3 alt1"><code class="py plain">&lt;font&gt;&lt;</code><code class="py keyword">/</code><code class="py plain">font&gt;</code></div>
+<div class="line number5 index4 alt2"><code class="py comments"># 讀取 last 指令轉出的檔案, 以 last -w &gt; cad2023_2b_w8.txt 建立檔案&lt;font&gt;&lt;/font&gt;</code></div>
+<div class="line number6 index5 alt1"><code class="py plain">with </code><code class="py functions">open</code><code class="py plain">(</code><code class="py string">"cad2023_2b_w8.txt"</code><code class="py plain">, </code><code class="py string">'r'</code><code class="py plain">) as cad_file:&lt;font&gt;&lt;</code><code class="py keyword">/</code><code class="py plain">font&gt;</code></div>
+<div class="line number7 index6 alt2"><code class="py spaces">    </code><code class="py comments"># 以下是利用跳行符號, 將每一行區隔成數列&lt;font&gt;&lt;/font&gt;</code></div>
+<div class="line number8 index7 alt1"><code class="py spaces">    </code><code class="py plain">cad_lines </code><code class="py keyword">=</code> <code class="py plain">cad_file.read().splitlines()&lt;font&gt;&lt;</code><code class="py keyword">/</code><code class="py plain">font&gt;</code></div>
+<div class="line number9 index8 alt2"><code class="py comments">#print(cad_lines)&lt;font&gt;&lt;/font&gt;</code></div>
+<div class="line number10 index9 alt1"><code class="py plain">&lt;font&gt;&lt;</code><code class="py keyword">/</code><code class="py plain">font&gt;</code></div>
+<div class="line number11 index10 alt2"><code class="py comments"># 從 cad_lines 建立所有登入使用者數列&lt;font&gt;&lt;/font&gt;</code></div>
+<div class="line number12 index11 alt1"><code class="py plain">login_users </code><code class="py keyword">=</code> <code class="py plain">[]&lt;font&gt;&lt;</code><code class="py keyword">/</code><code class="py plain">font&gt;</code></div>
+<div class="line number13 index12 alt2"><code class="py keyword">for</code> <code class="py plain">i </code><code class="py keyword">in</code> <code class="py plain">cad_lines:&lt;font&gt;&lt;</code><code class="py keyword">/</code><code class="py plain">font&gt;</code></div>
+<div class="line number14 index13 alt1"><code class="py spaces">    </code><code class="py plain">line_list </code><code class="py keyword">=</code> <code class="py plain">i.split(</code><code class="py string">" "</code><code class="py plain">)&lt;font&gt;&lt;</code><code class="py keyword">/</code><code class="py plain">font&gt;</code></div>
+<div class="line number15 index14 alt2"><code class="py spaces">    </code><code class="py plain">login_users.append(line_list[</code><code class="py value">0</code><code class="py plain">])&lt;font&gt;&lt;</code><code class="py keyword">/</code><code class="py plain">font&gt;</code></div>
+<div class="line number16 index15 alt1"><code class="py comments">#print(login_users)&lt;font&gt;&lt;/font&gt;</code></div>
+<div class="line number17 index16 alt2"><code class="py plain">&lt;font&gt;&lt;</code><code class="py keyword">/</code><code class="py plain">font&gt;</code></div>
+<div class="line number18 index17 alt1"><code class="py comments"># 根據 https://stackoverflow.com/questions/480214/how-do-i-remove-duplicates-from-a-list-while-preserving-order&lt;font&gt;&lt;/font&gt;</code></div>
+<div class="line number19 index18 alt2"><code class="py comments"># 數列去除重複元素但仍保持原始次序&lt;font&gt;&lt;/font&gt;</code></div>
+<div class="line number20 index19 alt1"><code class="py plain">login_users </code><code class="py keyword">=</code> <code class="py functions">list</code><code class="py plain">(</code><code class="py functions">dict</code><code class="py plain">.fromkeys(login_users))&lt;font&gt;&lt;</code><code class="py keyword">/</code><code class="py plain">font&gt;</code></div>
+<div class="line number21 index20 alt2"><code class="py comments">#print(login_users)&lt;font&gt;&lt;/font&gt;</code></div>
+<div class="line number22 index21 alt1"><code class="py plain">&lt;font&gt;&lt;</code><code class="py keyword">/</code><code class="py plain">font&gt;</code></div>
+<div class="line number23 index22 alt2"><code class="py comments"># 建立數列存放符合條件的使用者&lt;font&gt;&lt;/font&gt;</code></div>
+<div class="line number24 index23 alt1"><code class="py plain">valid_users </code><code class="py keyword">=</code> <code class="py plain">[]&lt;font&gt;&lt;</code><code class="py keyword">/</code><code class="py plain">font&gt;</code></div>
+<div class="line number25 index24 alt2"><code class="py plain">&lt;font&gt;&lt;</code><code class="py keyword">/</code><code class="py plain">font&gt;</code></div>
+<div class="line number26 index25 alt1"><code class="py comments"># 取出符合條件的使用者&lt;font&gt;&lt;/font&gt;</code></div>
+<div class="line number27 index26 alt2"><code class="py keyword">for</code> <code class="py plain">line </code><code class="py keyword">in</code> <code class="py plain">login_users:&lt;font&gt;&lt;</code><code class="py keyword">/</code><code class="py plain">font&gt;</code></div>
+<div class="line number28 index27 alt1"><code class="py spaces">    </code><code class="py keyword">if</code> <code class="py string">"cad"</code> <code class="py keyword">in</code> <code class="py plain">line:&lt;font&gt;&lt;</code><code class="py keyword">/</code><code class="py plain">font&gt;</code></div>
+<div class="line number29 index28 alt2"><code class="py spaces">        </code><code class="py comments"># 將 cad 字串去除&lt;font&gt;&lt;/font&gt;</code></div>
+<div class="line number30 index29 alt1"><code class="py spaces">        </code><code class="py plain">user_number </code><code class="py keyword">=</code> <code class="py plain">line.replace(</code><code class="py string">"cad"</code><code class="py plain">, "")&lt;font&gt;&lt;</code><code class="py keyword">/</code><code class="py plain">font&gt;</code></div>
+<div class="line number31 index30 alt2"><code class="py spaces">        </code><code class="py keyword">if</code> <code class="py plain">user_number </code><code class="py keyword">in</code> <code class="py plain">user_lines:&lt;font&gt;&lt;</code><code class="py keyword">/</code><code class="py plain">font&gt;</code></div>
+<div class="line number32 index31 alt1"><code class="py spaces">            </code><code class="py plain">valid_users.append(user_number)&lt;font&gt;&lt;</code><code class="py keyword">/</code><code class="py plain">font&gt;</code></div>
+<div class="line number33 index32 alt2"><code class="py spaces">            </code><code class="py plain">&lt;font&gt;&lt;</code><code class="py keyword">/</code><code class="py plain">font&gt;</code></div>
+<div class="line number34 index33 alt1"><code class="py comments"># 利用 reverse() 將 valid_users 反向排序&lt;font&gt;&lt;/font&gt;</code></div>
+<div class="line number35 index34 alt2"><code class="py plain">valid_users.reverse()&lt;font&gt;&lt;</code><code class="py keyword">/</code><code class="py plain">font&gt;</code></div>
+<div class="line number36 index35 alt1"><code class="py plain">&lt;font&gt;&lt;</code><code class="py keyword">/</code><code class="py plain">font&gt;</code></div>
+<div class="line number37 index36 alt2"><code class="py comments"># , 最早登入者列在最前面&lt;font&gt;&lt;/font&gt;</code></div>
+<div class="line number38 index37 alt1"><code class="py keyword">for</code> <code class="py plain">user </code><code class="py keyword">in</code> <code class="py plain">valid_users:&lt;font&gt;&lt;</code><code class="py keyword">/</code><code class="py plain">font&gt;</code></div>
+<div class="line number39 index38 alt2"><code class="py spaces">    </code><code class="py functions">print</code><code class="py plain">(user)&lt;font&gt;&lt;</code><code class="py keyword">/</code><code class="py plain">font&gt;</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">2）</span></span></span></span></span></span><span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">如何取放文件</span></span></span></span></span></span></span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">：</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">利用sftp從s1511.cycu.org清理文件畫面：</span></span></span></span></span></span></p>
+<p><img alt="" height="114" src="https://mde.tw/cadnote/images/w8_2b_sftp_commands.png" width="400"/></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">進入對應的目錄之後，以pwd 確認所在目錄後，以得到清理文件，以放上文件，例如：進入images 目錄後，可以穿透get gd_ex1.png 清理圖檔，將圖檔放入images 目錄，則確定確定sftp進入後，cd到images目錄，然後以put gd_ex1.png將圖檔送入。</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">3）</span></span></span></span></span></span><span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">如何與github帳號信任</span></span></span></span></span></span></span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">：</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">利用 ssh-keygen 在 .ssh 目錄中建立 id_rsa 和 id_rsa.pub，然後將 id_rsa.pub 註冊到各自帳號下設定的 SSH 和 GPG 金鑰區域。</span></span></span></span></span></span></p>
+<p><span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">.ssh 目錄中的 </span></span></span></span></span></span></span><a href="https://mde.tw/cpnote/downloads/config"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">config </span></span></span></span><span> </span></span></span></a><span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">，將 SSH 會話名稱設為 github.com：</span></span></span></span></span></span></span></p>
+<div>
+<div class="syntaxhighlighter js" id="highlighter_682020">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">1</span></span></span></span></span></span></div>
+<div class="line number2 index1 alt1"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">2</span></span></span></span></span></span></div>
+<div class="line number3 index2 alt2"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">3</span></span></span></span></span></span></div>
+<div class="line number4 index3 alt1"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">4</span></span></span></span></span></span></div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="js plain">Host github.com&lt;font&gt;&lt;/font&gt;</code></div>
+<div class="line number2 index1 alt1"><code class="js plain">User git&lt;font&gt;&lt;/font&gt;</code></div>
+<div class="line number3 index2 alt2"><code class="js plain">Hostname github.com&lt;font&gt;&lt;/font&gt;</code></div>
+<div class="line number4 index3 alt1"><code class="js plain">ProxyCommand /usr/bin/ncat --proxy p4.cycu.org:3128 --proxy-type http %h %p</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">將上列 config 傳送到帳號下的 .ssh 目錄之後，就可以利用 github.com 作為會話，從 github.com 拿起 cad2023 端口，並且已經具備 git push 的權限。</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">4）</span></span></span></span></span></span><span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">如何清理cad2023</span></span></span></span></span></span></span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">：</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">以 SSH 清理 cad2023 的指令：</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">git clone --recurse-submodules </span></span></span></span><span> </span></span></span><a href="mailto:git@github.com"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">git@github.com</span></span></span></span></span></span></a><span style="vertical-align: inherit;"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"> : 帳號/cad2023.git</span></span></span></span></span></span><span><span><span> </span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">接下來必須從cad2023清理server.py進行編輯，放入自己指派的9xxx連線埠後，再回傳。</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">5)</span></span></span></span></span></span><span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">如何啟動或關閉cad2023</span></span></span></span></span></span></span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">：</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">當使用者已經將上述預設登入Github帳號下，並且已經將server.py中的9xxx改為自己所指派的內部連線連接埠後再傳回，則可以利用python3 server.py編輯網站，並測試是否可連線至</span></span></span></span></span></span><a href="https://s1511.cycu.org:8xxxx"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">https://s1511.cycu.org:8xxxx</span></span></span></span></span></span></a></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">由於管理員內建密碼為admin，使用者修改後，編碼字符串將存入config/config，此檔案必須設定只有管理員可以讀取，若目前位於登入後的工作目錄，則其指令為：</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">chmod og-rwx 配置/配置</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">表示其他與群組針對 config/config 檔案的讀取、寫入與執行權限取消。</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">若希望使用者登入後動態網站仍然執行，python3 server.py&amp;</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">當server.py已經啟動時，使用者登入後可以使用下列指令，啟動各使用者啟動網頁編輯所對應的PID（進程ID）：</span></span></span></span></span></span></p>
+<p><span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">ps -axo pid，comm，uname | </span></span></span></span><span> </span></span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">grep“python3”</span></span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">各使用者若希望刪除已啟動的進程，可以找到啟動所的PID後，以下列指令關閉服務（如果PID = 1234）：</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">殺死 1234</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">其中，系統管理員可以刪除所有進程，而單一使用者只能刪除各個啟動的進程。</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">6）</span></span></span></span></span></span><span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">如何連結到動態網站</span></span></span></span></span></span></span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">：</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">python3 server.py 啟動測試是否可以連線到</span></span></span></span></span></span><a href="https://s1511.cycu.org:8xxxx"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">https://s1511.cycu.org:8xxxx</span></span></span></span></span></span></a></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">編輯網站啟動之後，使用者登入後可以透過 config 指令修改管理員密碼，而此一密碼的編碼將存入 s1511 以太坊主機檔案中的 config/config 檔案中，且此一密碼的編碼將存入 s1511 ，而不會推向github.com（因為.gitignore的設定）。</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">當使用者決定要進行 git add 和 git commit 之前，必須先以 git config 設定 user.name 和 user.email，此設定要存入 .gitconfig 檔案中。</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">7）</span></span></span></span></span></span><span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">如何設定靜態網站</span></span></span></span></span></span></span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">：</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">前面已經在/home/帳號/錢包目錄中透過SSH協定從github.com整理歸檔內容，由於SSH重要的設置，此錢包一旦修改修改版本，可以在新增提交之後，利用git推送指令將版本資料主動向github.com。</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">當以太坊的靜態網站 git Push 至 github.com 後，將透過 Github Pages 的設定進行轉檔。</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">如果使用者希望在 s1511 主機中伺服器對應的以太坊靜態網站，則可以將以太坊檔案存放帳戶中的 public_html 目錄中。</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">由於位於public_html 名稱位於github.com 中的以太坊文件數據，不是作為 git commit 與 git Push 之用，因此可以利用 git 坊clone --recurse-submodules https://github.com/帳戶/以太坊.git挖礦（直接以https明確的報表內容），並可在https://s1511.cycu.org/~帳戶/帳戶名稱抽取靜態網站資料。</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">8）</span></span></span></span></span></span><span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">如何與靜態網頁連結動態網站改版：</span></span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">當每次/home/帳戶/以太坊中的檔案修改版本，且資料已自動到github.com時，使用者就可以進入public_html中的以太坊目錄對應，以git pull指令從github.com取得最新的版本數據，該指令可以採用手動，也可以實現存取抓取的acp指令：</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">acp 必須納入 public_html 目錄中的靜態網站 git pull，且利用 chmod u+x acp 令其執行。</span></span></span></span></span></span></p>
+<p><a href="https://mde.tw/cadnote/downloads/acp"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">acp</span></span></span></span></span></span></a><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">內容：</span></span></span></span></span></span></p>
+<div>
+<div class="syntaxhighlighter js" id="highlighter_59694">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">1</span></span></span></span></span></span></div>
+<div class="line number2 index1 alt1"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">2</span></span></span></span></span></span></div>
+<div class="line number3 index2 alt2"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">3</span></span></span></span></span></span></div>
+<div class="line number4 index3 alt1"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">4</span></span></span></span></span></span></div>
+<div class="line number5 index4 alt2"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">5</span></span></span></span></span></span></div>
+<div class="line number6 index5 alt1"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">6</span></span></span></span></span></span></div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="js preprocessor">#! /bin/bash&lt;font&gt;&lt;/font&gt;</code></div>
+<div class="line number2 index1 alt1"><code class="js plain">git add .&lt;font&gt;&lt;/font&gt;</code></div>
+<div class="line number3 index2 alt2"><code class="js plain">git commit -m </code><code class="js string">"$1"</code><code class="js plain">&lt;font&gt;&lt;/font&gt;</code></div>
+<div class="line number4 index3 alt1"><code class="js plain">git push&lt;font&gt;&lt;/font&gt;</code></div>
+<div class="line number5 index4 alt2"><code class="js plain">cd ./../public_html/cad2023&lt;font&gt;&lt;/font&gt;</code></div>
+<div class="line number6 index5 alt1"><code class="js plain">git pull</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">9）</span></span></span></span></span></span><span><span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">如何對數據進行：</span></span></span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">chmod u+x acp</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">chmod og-rwx 配置/配置</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">chmod 711 /home/cad學號</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">chmoe 755 /home/cad學號/public_html</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">假設自己所分派到的網路連線被佔用，可以使用下列指令來尋找使用該連線連線連接埠號碼的使用者連線帳號連接埠：</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">例如要連接連接埠查詢號碼 9210 連接埠號碼的使用情況，指令為 </span></span></span></span></span></span><span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">lsof -i :9210，其中 ls 為 list, of 為開啟文件，-i 中的 i 為 internet, :9210 表示要求上市與連接埠 9210有關網路使用相關的資料。</span></span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">10)</span></span></span></span></span></span><span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">網路連線協定:</span></span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">將cad2023實體資料取得至s1511.cycu.org帳號下，若使用SSH協議且定位只有IPv6網路協議，則分別參與以SSH及https協議連線到github.com的設定。</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">其中說到運用 SSH 協定與 github.com 連線，運用在 git clone --recurse-submodules </span></span></span></span><span> </span></span></span><a href="mailto:git@github.com:%E5%B8%B3%E8%99%9F/cad2023.git"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">git@github.com:帳號/cad2023.git</span></span></span></span></span></span></a><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">因為其流程是利用 SSH 協定以 git 帳號作為登入工作階段名稱為 github .com 的連線主機（即config中的主機名稱設定），能否最終登錄取決於github.com會話（即config中設定檔中的主機名稱）後面的帳號是否已登入目前.ssh/id_rsa對應的終點。</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">至於在純IPv6網路下的s1511.cycu.org其https所需的代理設置，已經由管理員在/etc/environment中設置，因此所有用戶都需要設置。</span></span></span></span></span></span></p>
+<hr/>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">電腦輔助設計與實習課程分組網站在s1511.cycu.org所分配的外部與內部連接埠號碼：</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">cad2023_ag1: 8232, 9232</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">cad2023_ag2: 8233, 9233</span></span></span></span></span></span></p>
+<p><span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">cad2023_ag3: 8234, 9234</span></span></span></span></span></span></span></p>
+<p><span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">cad2023_ag4: 8235, 9235</span></span></span></span></span></span></span></p>
+<p><span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">cad2023_ag5: 8236, 9236</span></span></span></span></span></span></span></p>
+<p><span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">cad2023_ag6: 8237, 9237</span></span></span></span></span></span></span></p>
+<hr/>
+<p><span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">cad2023_bg1: 8238, 9238</span></span></span></span></span></span></span></p>
+<p><span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">cad2023_bg2: 8239, 9239</span></span></span></span></span></span></span></p>
+<p><span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">cad2023_bg3: 8240, 9240</span></span></span></span></span></span></span></p>
+<p><span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">cad2023_bg4: 8241, 9241</span></span></span></span></span></span></span></p>
+<p><span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">cad2023_bg5: 8242, 9242</span></span></span></span></span></span></span></p>
+<p><span><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">cad2023_bg6: 8243, 9243</span></span></span></span></span></span></span></p>
+<hr/>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">w8登錄查驗完成名單：</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">2a：</span></span></span></span></span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">41023134 </span></span></span></span><br/><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">40923118 </span></span></span></span><br/><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">41123145 41123137 41123153 40923127 41123139 41123108 40923213 41123139 41123108 40923213 41123139 41123108 40923213 </span></span></span></span><span style="vertical-align: inherit;"><span><span><span style="vertical-align: inherit;">41123139 </span></span></span><span><span><span style="vertical-align: inherit;">4112310 </span></span></span><span><span><span style="vertical-align: inherit;">409 </span></span></span><span><span><span style="vertical-align: inherit;">3108 </span></span></span><span><span><span style="vertical-align: inherit;">40923213 </span></span></span><span><span><span style="vertical-align: inherit;">41123117 </span></span></span><span><span><span style="vertical-align: inherit;">4141241 </span></span></span><span><span><span style="vertical-align: inherit;">4112415 3152 </span></span></span><span><span><span style="vertical-align: inherit;">41123129 </span></span></span><span><span><span style="vertical-align: inherit;">41123149 </span></span></span></span><br/><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">40923139 </span></span></span></span><span style="vertical-align: inherit;"><span><span><span style="vertical-align: inherit;">40923124 </span></span></span><span><span><span style="vertical-align: inherit;">41123149 </span></span></span><span><span><span style="vertical-align: inherit;">40923139 </span></span></span><span><span><span style="vertical-align: inherit;">40923124 </span></span></span><span><span><span style="vertical-align: inherit;">41123131 </span></span></span><span><span><span style="vertical-align: inherit;">41</span></span></span></span><br/><span><span><span style="vertical-align: inherit;"></span><span> </span></span><span><span style="vertical-align: inherit;"></span></span></span><br/><span><span><span style="vertical-align: inherit;"></span></span></span><br/><span><span><span style="vertical-align: inherit;"></span></span></span><br/><span><span><span style="vertical-align: inherit;"></span><span> </span></span><span><span style="vertical-align: inherit;"></span></span></span><br/><span><span><span style="vertical-align: inherit;"></span><span> </span></span><span><span style="vertical-align: inherit;"></span><span> </span></span><span><span style="vertical-align: inherit;"></span><span> </span></span><span><span style="vertical-align: inherit;"></span><span> </span></span><span><span style="vertical-align: inherit;"></span><span> </span></span><span><span style="vertical-align: inherit;"></span><span> </span></span><span><span style="vertical-align: inherit;"></span><span> </span></span><span><span style="vertical-align: inherit;"></span><span> </span></span><span><span style="vertical-align: inherit;"></span><span> </span></span><span><span style="vertical-align: inherit;"></span></span></span><br/><span></span><br/><span></span><br/><span></span><br/><span></span><br/><span></span><br/><span></span><br/><span></span><br/><span></span><br/><span></span><br/><span></span><br/><span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">2b：</span></span></span></span></span></span></p>
+<p><span><span>41123243</span></span><br/><span><span>41123241</span></span><br/><span><span>41123249</span></span><br/><span><span>41123214 41123224 41123228 41123215 41123245<span> </span></span><span>41123216<span> </span></span><span>41123215</span></span><br/><span><span>41123245</span></span><br/><span><span>41123216</span></span><br/><span><span>41123204<span> </span></span><span>41123245<span> </span></span><span>41123216</span></span><br/><span><span>41123204<span> </span></span><span>141243<span> </span></span><span>3240<span> </span></span><span>41123229<span> </span></span><span>41123209<span> </span></span><span>41123207<span> </span></span><span>41123246<span> </span></span><span>41123250<span> </span></span><span>41123201</span></span><br/><span><span>41123217<span> </span></span><span>41123251<span> </span></span><span>41123218</span></span><br/><span></span><br/><span></span><br/><span></span><br/><span></span><br/><span></span><br/><span></span><br/><span></span><br/><span></span><br/><span></span><br/><span></span><br/><span></span><br/><span></span><br/><span></span><br/><span></span></p>
+<p><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">模擬參考：</span></span></span></span></span></span></span></span></p>
+<p><a href="https://www.researchgate.net/publication/263466730_Mathematical_Modeling_of_Electromagnetic_Levitation_Ball_using_Bondgraph"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">https://www.researchgate.net/publication/263466730_Mathematical_Modeling_of_Electromagic_Levitation_Ball_using_Bondgraph</span></span></span></span></span></span></span></span></a></p>
+<p><a href="https://hal.science/hal-02408779v1/file/Magnetic_Canon.pdf"><span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">https://hal.science/hal-02408779v1/file/Magnetic_Canon.pdf</span></span></span></span></span></span></span></span></a></p>
+<br />WIN11 << <a href='WIN11.html'>Previous</a> <a href='w9.html'>Next</a> >> w9</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
