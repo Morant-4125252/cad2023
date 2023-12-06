@@ -2,6 +2,7 @@
         <head>
         <title>cmsite</title>
         <meta charset="utf-8">
+<meta property="head" content="H2">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
@@ -141,9 +142,57 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content"> <a href='布萊頓.html'>Next</a> >> 布萊頓<br /><h1>關於</h1>
-<p><a href="https://github.com/Morant-4125252/cad2023"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">https://github.com/Morant-4125252/cad2023</span></span></a></p>
-<br /> <a href='布萊頓.html'>Next</a> >> 布萊頓</div>
+    <div id="tipue_search_content">w9 << <a href='w9.html'>Previous</a> <a href='project1.html'>Next</a> >> project1<br /><h1>wink</h1>
+<p>學習如何利用<span> </span><a href="https://www.debugmode.com/wink.html">Wink</a><span> </span>製作電腦操作流程影片, 並將影片放入個人與分組網頁中.</p>
+<p>首先使用者必須了解<span> </span><a href="https://www.debugmode.com/wink.html">Wink</a><span> </span>製作影片的功能與<span> </span><a href="https://github.com/ShareX/ShareX/releases">ShareX</a><span> </span>相同, 都是依賴<span> </span><a href="https://ffmpeg.org/download.html">ffmpeg.exe</a>. 意即使用<span> </span><a href="https://www.debugmode.com/wink.html">Wink</a><span> </span>之前必須在 Preferences 中先行設定 ffmpeg.exe 所在位置, 否則無法對所建立的專案轉為 mp4 檔案.</p>
+<p>另外, 若擷取關鍵影格的電腦螢幕解析度大於 1008 x 630, 通常建立將影格 resize, 以方便使用者在手機上觀看影片.</p>
+<p>利用 Wink 建立操作影片的步驟:</p>
+<ol>
+<li>設定 ffmpeg.exe 所在位置, 若使用隨身碟中的可攜程式系統, 可將 ffmpeg.exe 放在 data 目錄中, 並以 wink_ffmpeg.reg 進行設定, 也可將 Wink 的啟動與 start_ipv6.bat 進行整合.</li>
+<li>開啟 Wink 新專案.</li>
+<li>每按下一次 Pause 鍵, 可擷取操作過程中的畫面影格 (利用 Zoomit 放大所要強調的操作內容, 並以紅線框列).</li>
+<li>操作錄製結束後, 從右下方的 Tray 中, 以滑鼠左鍵點選, 在 Wink 圖示中, 以滑鼠右鍵帶出 Finish Capture 按鍵, 點選後即可回到 Wink 專案區.</li>
+<li>在每一頁影格中加入註解說明 TextBox 之前, 先利用 Project - Resize All Frames 將影格縮小至 1008 x630.</li>
+<li>完成註解說明後, 可以逐一移動各頁面滑鼠游標位置, 並決定各頁面影片播放時的停留時間.</li>
+<li>最後以 Render 按鈕進行轉檔, 並利用 View Rendered Output 檢視所建立的操作影片.</li>
+</ol>
+<p>wink_ffmpeg.reg 設定檔案內容:</p>
+<div>
+<div class="syntaxhighlighter js" id="highlighter_67975">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+<div class="line number4 index3 alt1">4</div>
+<div class="line number5 index4 alt2">5</div>
+<div class="line number6 index5 alt1">6</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="js plain">Windows Registry Editor Version 5.00</code></div>
+<div class="line number2 index1 alt1"> </div>
+<div class="line number3 index2 alt2"><code class="js plain">[HKEY_CURRENT_USER\SOFTWARE\Debugmode]</code></div>
+<div class="line number4 index3 alt1"> </div>
+<div class="line number5 index4 alt2"><code class="js plain">[HKEY_CURRENT_USER\SOFTWARE\Debugmode\Wink\Settings]</code></div>
+<div class="line number6 index5 alt1"><code class="js string">"FfmpegPath"</code><code class="js plain">=</code><code class="js string">"y:\\ffmpeg.exe"</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><a href="https://mde.tw/cadnote/downloads/2a_w10_start_ipv6_wink_reg.7z">2a_w10_start_ipv6_wink_reg.7z</a></p>
+<div class="winkVideoContainerClass"><video autoplay="autoplay" class="winkVideoClass" controls="controls" data-dirname="/cmsimde/static" data-mce-fragment="1" data-varname="winkVideoData_creo10" height="630" muted="true" width="1008"></video></div>
+<p><span>w11 作業</span>:</p>
+<ol>
+<li>請分別利用 Replit、s1511.cycu.org 與 localhost 維護個人與分組網站, 分別在標題為 "hw" 的第一層頁面下, 建立第二層標題分別為 "Replit"、"s1511" 與 "localhost" 等三個頁面, 其中各放入採上述三種方式維護網頁的相關過程與細節. 並在各頁面中以文字說明操作步驟要點.</li>
+<li>請在個人網頁中建立標題為 "project1" 的的第一層頁面下, 放入個人截至 w11 在 perpetual motion simulator 所完成的 Wink 過程操作說明影片.</li>
+</ol>
+<br />w9 << <a href='w9.html'>Previous</a> <a href='project1.html'>Next</a> >> project1</div>
         
     <!-- footer -->
       <div class="container">
