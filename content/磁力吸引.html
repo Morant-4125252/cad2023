@@ -1,0 +1,507 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>cmsite</title>
+        <meta charset="utf-8">
+<meta property="head" content="H2">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <!-- for Wink3 客製化關閉 -->
+        <!--
+        <link rel="stylesheet" type="text/css" href="./../cmsimde/static/winkPlayer.css" />
+        <script type="text/javascript" src="./../cmsimde/static/winkPlayer.js"></script>
+        -->
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPowerShell.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushMojo.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushRust.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container">
+                <div class="row align-items-center">
+                <h1>41123224</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">41123224</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">SMap</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='關於.html'>關於</a><li><a href='布萊頓.html'>布萊頓</a><li class='has-children'><a href='w4~w5.html'>w4~w5</a><ul class='dropdown'><li><a href='西門子.html'>西門子</a><li><a href='預覽作品.html'>預覽作品</a><li><a href='歐特克.html'>歐特克</a><li><a href='正溫度係數.html'>正溫度係數</a></li></ul><li class='has-children'><a href='W6-W7.html'>W6-W7</a><ul class='dropdown'><li><a href='WIN11.html'>WIN11</a></li></ul><li><a href='w8.html'>w8</a><li class='has-children'><a href='w9.html'>w9</a><ul class='dropdown'><li><a href='wink.html'>wink</a></li></ul><li><a href='project1.html'>project1</a><li class='has-children'><a href='w11.html'>w11</a><ul class='dropdown'><li class='has-children'><a href='hw.html'>hw</a><ul class='dropdown'><li><a href='Replit.html'>Replit</a><li><a href='s1511.html'>s1511</a><li><a href='localhost.html'>localhost</a></li></li></ul></ul><li><a href='w12.html'>w12</a><li><a href='w13-w14.html'>w13-w14</a><li><a href='w15.html'>w15</a><li><a href='上課內容.html'>上課內容</a><li class='has-children'><a href='繪圖.html'>繪圖</a><ul class='dropdown'><li class='has-children'><a href='專案一.html'>專案一</a><ul class='dropdown'><li><a href='組成圖：.html'>組成圖：</a><li><a href='部分部分圖：.html'>部分部分圖：</a><li><a href='Onshape類似零組件.html'>Onshape類似零組件</a></li></li></ul></ul><li class='has-children'><a href='任務一.html'>任務一</a><ul class='dropdown'><li><a href='磁力吸引.html'>磁力吸引</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">任務一 << <a href='任務一.html'>Previous</a> <br /><h1>磁力吸引</h1>
+<p>有關磁力吸引的鋼球循環運動系統, 請參考<a href="https://youtu.be/r_LG8FDt51U?si=D6TZP_XarNUvVOye">這個影片</a>.<span> </span><span>或者透過課程檔案下載密碼觀看<a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EcDmEvU3PKREq_noqkc_FeABZhbpfQ5p-f-3LuZn-PAQ1g?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0RpcmVjdCJ9fQ&amp;e=vF0sTa">這個影片</a>.</span></p>
+<p><span>根據<a href="https://www.etsy.com/listing/1253569674/perpetual-machine-simulator-perpetual">這個網站</a>宣稱是此一 Perpetual Motion Simulator 的原始創作者.</span></p>
+<p><span>同時參考 <a href="https://nfuedu-my.sharepoint.com/:b:/g/personal/yen_nfu_edu_tw/ETvxcyDptUtMlUj22ato4RYBJc5ekzCuC1pGFcOmUSXK3w?e=2miuR4">A perpetual motion machine powered by electromagnetism.pdf</a><span> </span>(需要下載密碼)</span></p>
+<p>電腦輔助設計與實習課程的任務一即可根據此一裝置的設計, 先採用電腦輔助設計軟體, 繪製系統所需的 3D 零組件, 然後轉為 STL 格式, import 進入 CoppeliaSim, 接著根據影片說明, 利用近接感測器(例如:<span> </span><a href="https://shopee.tw/%E9%9B%BB%E6%84%9F%E5%BC%8F-%E6%8E%A5%E8%BF%91%E9%96%8B%E9%97%9C-SN04N-SN04P-SN04Y-NPN-%E7%9B%B4%E6%B5%813%E7%B7%9A-%E5%9F%8B%E5%85%A5%E5%BC%8F-%E6%98%8E%E6%AD%A6%E6%A8%A1%E7%B5%84-i.795631261.18472134425">電感式近接開關</a>,<span> </span><a href="https://www.amazon.com/-/en/LY346/dp/B07V4PR84Y">Inductive proximity sensor</a>) 控制電磁鐵開關, 設法透過磁力吸引讓鋼球具有足夠動能返回圓形平台.</p>
+<p>有關利用 Arduino 控制卡與相關電路設計產生電磁力控制的模擬, 請參考<span> </span><a href="https://mde.tw/cad2023/content/PICSimLab.html">PICSimLab</a><span> </span>頁面中的說明.</p>
+<p>一旦完成 CoppeliaSim 與 Arduino 電路設計等機電資系統整合模擬, 就可以進一步利用 3D printer 列印出所需零組件, 結合實體電路設計完成此一系統的虛實整合.</p>
+<p>機電模擬系統:</p>
+<p>下載支援 IPv6 網路協定版本<span> </span><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EfEaYO4E4eBGtTV3QBCP0f0B3JBfrw11LslWmQyqZB75fw?e=Zf7hCp">CoppeliaSimEdu_4.5.1_rev4_for_cd2023.7z</a><span> </span>(需要下載密碼)</p>
+<p><a href="https://www.coppeliarobotics.com/helpFiles/">CoppeliaSim 使用者手冊</a>,<span> </span><a href="https://mde.tw/pjcopsim">CoppeliaSim 4.3.0 使用手冊網站</a></p>
+<p>模擬磁力的<a href="https://forum.coppeliarobotics.com/viewtopic.php?t=3923">討論</a>,<span> </span><a href="https://forum.coppeliarobotics.com/viewtopic.php?t=1501">1</a>,<span> </span><a href="https://forum.coppeliarobotics.com/viewtopic.php?t=7187">2</a></p>
+<p><a href="https://studywolf.wordpress.com/2016/04/18/using-vrep-for-simulation-of-force-controlled-models/">Force Control Modeling</a></p>
+<p><a href="https://github.com/CoppeliaRobotics/scenes/raw/master/otherScenes/simpleMagnetDemo.ttt">simpleMagnetDemo.ttt</a></p>
+<p>模擬原理:</p>
+<p>Perpetual Motion Simulator 主要的電路設計包含右側軌道下方的電磁鐵, 通電後可產生一定大小的磁吸力, 當圓形鐵球循著軌道由平台孔洞往下滾動, 經過軌道下方近接感測器 (Proximity sensor) 時 (距離 3mm-5mm), 透過感應, 控制電路將會短暫啟動電磁鐵 (10 miliseconds), 促使圓形鐵球加速滾動, 其磁力大小約略與圓形鐵球距離的平方成反比 (<a href="https://en.wikipedia.org/wiki/Computational_electromagnetics">Computational Electromagnetics</a>,<span> </span><a href="https://javalab.org/en/magnetic_field_around_a_coil_en/">磁場模擬</a>).</p>
+<p>因此圓形鐵球除了從平台高度落下時, 將位能轉換為動能外, 與軌道滾動磨擦以及空氣阻力所損耗的運動能, 將額外由電磁鐵開關間所得到的磁力吸引能量進行加速, 以便取得足夠的動能在脫離軌道末端後, 重新回到圓形平台.</p>
+<p><img alt="" height="299" src="https://mde.tw/cadnote/images/perpetual_motion_simulator.png" width="400"/></p>
+<p>(image from<span> </span><a href="https://www.etsy.com/listing/1253569674/perpetual-machine-simulator-perpetual">here</a>)</p>
+<p>電磁力未啟動下的 perpetual motion simulator CoppeliaSim 場景模擬:</p>
+<p><img alt="" height="303" src="https://mde.tw/cadnote/images/perpetual_motion_simulator.gif" width="400"/></p>
+<p><a href="https://cad.onshape.com/documents/42e52a740033264a7d82e595/w/2f1d43f82796f4e05a79c0b5/e/f2fa8150f24c8a3d1aa4d036?renderMode=0&amp;uiState=650b848e93b8b544db72a044">Images and part files in Onshape</a><span> </span>(STL file import into CoppeliaSim 尺寸由 mm 放大10 倍至 cm, 且 z 軸向上, 場景中圓球直徑為 12.825 cm, 平台圓孔直徑為 20 cm)</p>
+<p><img alt="" height="329" src="https://mde.tw/cadnote/images/perpetual_motion_simulator_scene.gif" width="400"/></p>
+<p><a href="https://cad.onshape.com/documents/42e52a740033264a7d82e595/w/2f1d43f82796f4e05a79c0b5/e/f2fa8150f24c8a3d1aa4d036?renderMode=0&amp;uiState=651e2855dd2e77079352b937">Perpetual Motion Simulator in Onshape</a>, 轉入 CoppeliaSim 後放大 10 倍, 且 z 軸向上之模擬場景, 下載<span> </span><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EVInN4wwqbpAuAv14NeTfpIB-7Q3hshxyaR38R9fd9fbkw?e=jZhpZQ">perpetual motion simulator stage2.7z</a><span> </span>(需要下載密碼)</p>
+<p>有關如何在 Onshape 繪製零組件, 轉出 STL 檔案, 轉入 CoppeliaSim 並進行組件 divide and group, 請參考這個<a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EQkDoYGPTlRBi4iK288VMXQB4dH92ieYRUf1c4h5IjHU0A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0RpcmVjdCJ9fQ&amp;e=wYUHv2">教學影片</a>.</p>
+<p>以下 Python 程式可在 CoppeliaSim 場景檔案中建立所需的模擬組件:</p>
+<p>啟動<span> </span><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EfEaYO4E4eBGtTV3QBCP0f0B3JBfrw11LslWmQyqZB75fw?e=Zf7hCp">CoppeliaSimEdu_4.5.1_rev4_for_cd2023.7z</a><span> </span>(支援 IPv6 網路協定版本, 需要下載密碼), 然後在<span> </span><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EQTW-mq62DpFtw5It9ao-PIBPXW7z5z8oVsW5gd8zbDXOQ?e=q6gHgf">Portable_2023_fall_1.3g_5g.7z</a><span> </span>(需要下載密碼) 可攜環境啟動後, 以 pip install pyzmq cbor keyboard 安裝所需模組, 然後執行下列 zmqRemoteAPI IPv6 程式, 將滑鼠在場景中點擊後, 按下 q 鍵即可終止場景模擬:</p>
+<div>
+<div class="syntaxhighlighter py" id="highlighter_117094">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+<div class="line number4 index3 alt1">4</div>
+<div class="line number5 index4 alt2">5</div>
+<div class="line number6 index5 alt1">6</div>
+<div class="line number7 index6 alt2">7</div>
+<div class="line number8 index7 alt1">8</div>
+<div class="line number9 index8 alt2">9</div>
+<div class="line number10 index9 alt1">10</div>
+<div class="line number11 index10 alt2">11</div>
+<div class="line number12 index11 alt1">12</div>
+<div class="line number13 index12 alt2">13</div>
+<div class="line number14 index13 alt1">14</div>
+<div class="line number15 index14 alt2">15</div>
+<div class="line number16 index15 alt1">16</div>
+<div class="line number17 index16 alt2">17</div>
+<div class="line number18 index17 alt1">18</div>
+<div class="line number19 index18 alt2">19</div>
+<div class="line number20 index19 alt1">20</div>
+<div class="line number21 index20 alt2">21</div>
+<div class="line number22 index21 alt1">22</div>
+<div class="line number23 index22 alt2">23</div>
+<div class="line number24 index23 alt1">24</div>
+<div class="line number25 index24 alt2">25</div>
+<div class="line number26 index25 alt1">26</div>
+<div class="line number27 index26 alt2">27</div>
+<div class="line number28 index27 alt1">28</div>
+<div class="line number29 index28 alt2">29</div>
+<div class="line number30 index29 alt1">30</div>
+<div class="line number31 index30 alt2">31</div>
+<div class="line number32 index31 alt1">32</div>
+<div class="line number33 index32 alt2">33</div>
+<div class="line number34 index33 alt1">34</div>
+<div class="line number35 index34 alt2">35</div>
+<div class="line number36 index35 alt1">36</div>
+<div class="line number37 index36 alt2">37</div>
+<div class="line number38 index37 alt1">38</div>
+<div class="line number39 index38 alt2">39</div>
+<div class="line number40 index39 alt1">40</div>
+<div class="line number41 index40 alt2">41</div>
+<div class="line number42 index41 alt1">42</div>
+<div class="line number43 index42 alt2">43</div>
+<div class="line number44 index43 alt1">44</div>
+<div class="line number45 index44 alt2">45</div>
+<div class="line number46 index45 alt1">46</div>
+<div class="line number47 index46 alt2">47</div>
+<div class="line number48 index47 alt1">48</div>
+<div class="line number49 index48 alt2">49</div>
+<div class="line number50 index49 alt1">50</div>
+<div class="line number51 index50 alt2">51</div>
+<div class="line number52 index51 alt1">52</div>
+<div class="line number53 index52 alt2">53</div>
+<div class="line number54 index53 alt1">54</div>
+<div class="line number55 index54 alt2">55</div>
+<div class="line number56 index55 alt1">56</div>
+<div class="line number57 index56 alt2">57</div>
+<div class="line number58 index57 alt1">58</div>
+<div class="line number59 index58 alt2">59</div>
+<div class="line number60 index59 alt1">60</div>
+<div class="line number61 index60 alt2">61</div>
+<div class="line number62 index61 alt1">62</div>
+<div class="line number63 index62 alt2">63</div>
+<div class="line number64 index63 alt1">64</div>
+<div class="line number65 index64 alt2">65</div>
+<div class="line number66 index65 alt1">66</div>
+<div class="line number67 index66 alt2">67</div>
+<div class="line number68 index67 alt1">68</div>
+<div class="line number69 index68 alt2">69</div>
+<div class="line number70 index69 alt1">70</div>
+<div class="line number71 index70 alt2">71</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="py comments"># zmqRemoteApi_IPv6 為將 zmq 通訊協定修改為 IPv4 與 IPv6 相容</code></div>
+<div class="line number2 index1 alt1"><code class="py comments"># pip install pyzmq cbor keyboard</code></div>
+<div class="line number3 index2 alt2"><code class="py keyword">from</code> <code class="py plain">zmqRemoteApi_IPv6 </code><code class="py keyword">import</code> <code class="py plain">RemoteAPIClient</code></div>
+<div class="line number4 index3 alt1"><code class="py keyword">import</code> <code class="py plain">time</code></div>
+<div class="line number5 index4 alt2"><code class="py keyword">import</code> <code class="py plain">math</code></div>
+<div class="line number6 index5 alt1"><code class="py keyword">import</code> <code class="py plain">keyboard</code></div>
+<div class="line number7 index6 alt2"> </div>
+<div class="line number8 index7 alt1"><code class="py comments"># 利用 zmqRemoteAPI 以 23000 對場景伺服器進行連線</code></div>
+<div class="line number9 index8 alt2"><code class="py plain">client </code><code class="py keyword">=</code> <code class="py plain">RemoteAPIClient(</code><code class="py string">'localhost'</code><code class="py plain">, </code><code class="py value">23000</code><code class="py plain">)</code></div>
+<div class="line number10 index9 alt1"><code class="py comments"># 以 getObject 方法取得場景物件</code></div>
+<div class="line number11 index10 alt2"><code class="py plain">sim </code><code class="py keyword">=</code> <code class="py plain">client.getObject(</code><code class="py string">'sim'</code><code class="py plain">)</code></div>
+<div class="line number12 index11 alt1"><code class="py plain">box </code><code class="py keyword">=</code> <code class="py plain">sim.getObject(</code><code class="py string">'/box'</code><code class="py plain">)</code></div>
+<div class="line number13 index12 alt2"> </div>
+<div class="line number14 index13 alt1"><code class="py comments"># 啟動模擬</code></div>
+<div class="line number15 index14 alt2"><code class="py plain">sim.startSimulation()</code></div>
+<div class="line number16 index15 alt1"><code class="py comments"># 建立尺寸數列, 分別定義 x, y, z 方向尺寸</code></div>
+<div class="line number17 index16 alt2"><code class="py plain">x </code><code class="py keyword">=</code> <code class="py value">0.2</code></div>
+<div class="line number18 index17 alt1"><code class="py plain">y </code><code class="py keyword">=</code> <code class="py value">0.2</code></div>
+<div class="line number19 index18 alt2"><code class="py plain">z </code><code class="py keyword">=</code> <code class="py value">0.1</code></div>
+<div class="line number20 index19 alt1"><code class="py plain">size </code><code class="py keyword">=</code> <code class="py plain">[x, y, z]</code></div>
+<div class="line number21 index20 alt2"> </div>
+<div class="line number22 index21 alt1"><code class="py comments"># 利用 size 數列, 建立圓柱物件, 2 代表 cylinder</code></div>
+<div class="line number23 index22 alt2"><code class="py comments"># 8 表示 respondable, 1 為 質量</code></div>
+<div class="line number24 index23 alt1"><code class="py plain">digit1_handle </code><code class="py keyword">=</code> <code class="py plain">sim.createPureShape(</code><code class="py value">2</code><code class="py plain">, </code><code class="py value">8</code><code class="py plain">, size, </code><code class="py value">1</code><code class="py plain">, </code><code class="py color1">None</code><code class="py plain">)</code></div>
+<div class="line number25 index24 alt2"><code class="py comments"># 將圓柱物件命名為 digit1, 若用於機械計分可做為個位數轉盤</code></div>
+<div class="line number26 index25 alt1"><code class="py comments"># 之後可再導入帶有數字組立的外型零件</code></div>
+<div class="line number27 index26 alt2"><code class="py plain">sim.setObjectAlias(digit1_handle, </code><code class="py string">'digit1'</code><code class="py plain">)</code></div>
+<div class="line number28 index27 alt1"><code class="py comments"># 轉角單位為徑度</code></div>
+<div class="line number29 index28 alt2"><code class="py plain">sim.setObjectOrientation(digit1_handle, </code><code class="py keyword">-</code><code class="py value">1</code><code class="py plain">, [</code><code class="py value">0</code><code class="py plain">, math.pi</code><code class="py keyword">/</code><code class="py value">2</code><code class="py plain">, </code><code class="py value">0</code><code class="py plain">])</code></div>
+<div class="line number30 index29 alt1"><code class="py comments"># 起始物件中心位於 [0, 0, 0], 為了位於地板, 往 z 提升一個半徑高度</code></div>
+<div class="line number31 index30 alt2"><code class="py plain">sim.setObjectPosition(digit1_handle, </code><code class="py keyword">-</code><code class="py value">1</code><code class="py plain">, [</code><code class="py value">0</code><code class="py plain">, </code><code class="py value">0</code><code class="py plain">, x</code><code class="py keyword">/</code><code class="py value">2</code><code class="py plain">])</code></div>
+<div class="line number32 index31 alt1"> </div>
+<div class="line number33 index32 alt2"><code class="py comments"># 建立 revolute joint 命名為 joint, 且將 joint mode 設為 dynamic, control mode 設為 velocity</code></div>
+<div class="line number34 index33 alt1"><code class="py plain">joint1_handle </code><code class="py keyword">=</code> <code class="py plain">sim.createJoint(sim.joint_revolute_subtype, sim.jointmode_dynamic, </code><code class="py value">0</code><code class="py plain">, </code><code class="py color1">None</code><code class="py plain">)</code></div>
+<div class="line number35 index34 alt2"><code class="py plain">sim.setObjectInt32Param(joint1_handle, sim.jointintparam_dynctrlmode, sim.jointdynctrl_velocity)</code></div>
+<div class="line number36 index35 alt1"><code class="py plain">sim.setObjectAlias(joint1_handle, </code><code class="py string">'joint1'</code><code class="py plain">)</code></div>
+<div class="line number37 index36 alt2"> </div>
+<div class="line number38 index37 alt1"><code class="py comments"># 取得 cylinder 的位置座標</code></div>
+<div class="line number39 index38 alt2"><code class="py plain">digit1_pos </code><code class="py keyword">=</code> <code class="py plain">sim.getObjectPosition(digit1_handle, </code><code class="py keyword">-</code><code class="py value">1</code><code class="py plain">)</code></div>
+<div class="line number40 index39 alt1"><code class="py plain">joint1_pos </code><code class="py keyword">=</code> <code class="py plain">[digit1_pos[</code><code class="py value">0</code><code class="py plain">], digit1_pos[</code><code class="py value">1</code><code class="py plain">], digit1_pos[</code><code class="py value">2</code><code class="py plain">]]</code></div>
+<div class="line number41 index40 alt2"> </div>
+<div class="line number42 index41 alt1"><code class="py comments"># 將 joint1 至於 cylinder 中心</code></div>
+<div class="line number43 index42 alt2"><code class="py plain">sim.setObjectPosition(joint1_handle, </code><code class="py keyword">-</code><code class="py value">1</code><code class="py plain">, joint1_pos)</code></div>
+<div class="line number44 index43 alt1"><code class="py comments"># 取得 digit1_handle 的方位</code></div>
+<div class="line number45 index44 alt2"><code class="py plain">digit1_ori </code><code class="py keyword">=</code> <code class="py plain">sim.getObjectOrientation(digit1_handle, </code><code class="py keyword">-</code><code class="py value">1</code><code class="py plain">)</code></div>
+<div class="line number46 index45 alt1"><code class="py comments"># 將 joint1_handle 方位與 digit1 對齊</code></div>
+<div class="line number47 index46 alt2"><code class="py plain">sim.setObjectOrientation(joint1_handle, </code><code class="py keyword">-</code><code class="py value">1</code><code class="py plain">, digit1_ori)</code></div>
+<div class="line number48 index47 alt1"> </div>
+<div class="line number49 index48 alt2"><code class="py comments"># 將 joint1 置於 box 上</code></div>
+<div class="line number50 index49 alt1"><code class="py plain">sim.setObjectParent(joint1_handle, box, </code><code class="py color1">True</code><code class="py plain">)</code></div>
+<div class="line number51 index50 alt2"><code class="py comments"># 將 cylinder 置於 joint1 上</code></div>
+<div class="line number52 index51 alt1"><code class="py plain">sim.setObjectParent(digit1_handle, joint1_handle, </code><code class="py color1">True</code><code class="py plain">)</code></div>
+<div class="line number53 index52 alt2"> </div>
+<div class="line number54 index53 alt1"><code class="py comments"># 鎖定 joint1</code></div>
+<div class="line number55 index54 alt2"><code class="py plain">sim.setJointForce(joint1_handle, </code><code class="py functions">float</code><code class="py plain">(</code><code class="py string">'inf'</code><code class="py plain">))</code></div>
+<div class="line number56 index55 alt1"> </div>
+<div class="line number57 index56 alt2"><code class="py functions">print</code><code class="py plain">(</code><code class="py string">"基本場景建立完成!"</code><code class="py plain">)</code></div>
+<div class="line number58 index57 alt1"> </div>
+<div class="line number59 index58 alt2"><code class="py comments"># 設定主迴圈</code></div>
+<div class="line number60 index59 alt1"><code class="py keyword">while</code> <code class="py color1">True</code><code class="py plain">:</code></div>
+<div class="line number61 index60 alt2"><code class="py spaces">    </code><code class="py comments"># 設定 joint1 目標速度</code></div>
+<div class="line number62 index61 alt1"><code class="py spaces">    </code><code class="py plain">sim.setJointTargetVelocity(joint1_handle, </code><code class="py value">10</code><code class="py plain">)</code></div>
+<div class="line number63 index62 alt2"><code class="py spaces">    </code><code class="py comments"># 讓 coppeliasim 有時間按照設定讓 joint1 旋轉</code></div>
+<div class="line number64 index63 alt1"><code class="py spaces">    </code><code class="py plain">time.sleep(</code><code class="py value">0.01</code><code class="py plain">) </code></div>
+<div class="line number65 index64 alt2"> </div>
+<div class="line number66 index65 alt1"><code class="py spaces">    </code><code class="py keyword">if</code> <code class="py plain">keyboard.is_pressed(</code><code class="py string">'q'</code><code class="py plain">):</code></div>
+<div class="line number67 index66 alt2"><code class="py spaces">        </code><code class="py comments"># 可以按下 q 鍵跳出重複執行迴圈</code></div>
+<div class="line number68 index67 alt1"><code class="py spaces">        </code><code class="py keyword">break</code></div>
+<div class="line number69 index68 alt2"> </div>
+<div class="line number70 index69 alt1"><code class="py comments"># 終止模擬</code></div>
+<div class="line number71 index70 alt2"><code class="py plain">sim.stopSimulation()</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>下載<span> </span><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EVV3NaesdDdNqcoD3xAo96gBqGG4gEJFPknOIt7EfofGlg?e=OfQ4qo">zmqRemoteAPI Python for cad2023.7z</a><span> </span>(需要下載密碼)</p>
+<p>在<span> </span><a href="https://github.com/CoppeliaRobotics/scenes/raw/master/otherScenes/simpleMagnetDemo.ttt">simpleMagnetDemo.ttt</a><span> </span>中利用 Lua 以 proximity sensor 感測與物體的距離後, 產生電磁吸引力的範例程式:</p>
+<div>
+<div class="syntaxhighlighter lua" id="highlighter_825682">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+<div class="line number4 index3 alt1">4</div>
+<div class="line number5 index4 alt2">5</div>
+<div class="line number6 index5 alt1">6</div>
+<div class="line number7 index6 alt2">7</div>
+<div class="line number8 index7 alt1">8</div>
+<div class="line number9 index8 alt2">9</div>
+<div class="line number10 index9 alt1">10</div>
+<div class="line number11 index10 alt2">11</div>
+<div class="line number12 index11 alt1">12</div>
+<div class="line number13 index12 alt2">13</div>
+<div class="line number14 index13 alt1">14</div>
+<div class="line number15 index14 alt2">15</div>
+<div class="line number16 index15 alt1">16</div>
+<div class="line number17 index16 alt2">17</div>
+<div class="line number18 index17 alt1">18</div>
+<div class="line number19 index18 alt2">19</div>
+<div class="line number20 index19 alt1">20</div>
+<div class="line number21 index20 alt2">21</div>
+<div class="line number22 index21 alt1">22</div>
+<div class="line number23 index22 alt2">23</div>
+<div class="line number24 index23 alt1">24</div>
+<div class="line number25 index24 alt2">25</div>
+<div class="line number26 index25 alt1">26</div>
+<div class="line number27 index26 alt2">27</div>
+<div class="line number28 index27 alt1">28</div>
+<div class="line number29 index28 alt2">29</div>
+<div class="line number30 index29 alt1">30</div>
+<div class="line number31 index30 alt2">31</div>
+<div class="line number32 index31 alt1">32</div>
+<div class="line number33 index32 alt2">33</div>
+<div class="line number34 index33 alt1">34</div>
+<div class="line number35 index34 alt2">35</div>
+<div class="line number36 index35 alt1">36</div>
+<div class="line number37 index36 alt2">37</div>
+<div class="line number38 index37 alt1">38</div>
+<div class="line number39 index38 alt2">39</div>
+<div class="line number40 index39 alt1">40</div>
+<div class="line number41 index40 alt2">41</div>
+<div class="line number42 index41 alt1">42</div>
+<div class="line number43 index42 alt2">43</div>
+<div class="line number44 index43 alt1">44</div>
+<div class="line number45 index44 alt2">45</div>
+<div class="line number46 index45 alt1">46</div>
+<div class="line number47 index46 alt2">47</div>
+<div class="line number48 index47 alt1">48</div>
+<div class="line number49 index48 alt2">49</div>
+<div class="line number50 index49 alt1">50</div>
+<div class="line number51 index50 alt2">51</div>
+<div class="line number52 index51 alt1">52</div>
+<div class="line number53 index52 alt2">53</div>
+<div class="line number54 index53 alt1">54</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="lua keyword">function</code> <code class="lua plain">sysCall_init()</code></div>
+<div class="line number2 index1 alt1"><code class="lua spaces">     </code><code class="lua comments">-- 初始化 callback 函數，在模擬開始時執行</code></div>
+<div class="line number3 index2 alt2"><code class="lua spaces">     </code><code class="lua plain">sensor = sim.getObject(</code><code class="lua string">'./sensor'</code><code class="lua plain">)</code></div>
+<div class="line number4 index3 alt1"><code class="lua spaces">     </code><code class="lua comments">-- 取得命名為 'sensor' 的物件 handle。 此處使用 proximity 感測器，用於檢測物體之間的距離</code></div>
+<div class="line number5 index4 alt2"><code class="lua spaces">     </code><code class="lua plain">shape = sim.getObject(</code><code class="lua string">'.'</code><code class="lua plain">)</code></div>
+<div class="line number6 index5 alt1"><code class="lua spaces">     </code><code class="lua comments">-- 取得目前 script 所依附的物件 handle，即包含此 script 的物件 handle</code></div>
+<div class="line number7 index6 alt2"><code class="lua spaces">     </code><code class="lua plain">sim.setObjectInt32Param(shape, sim.shapeintparam_static, 0)</code></div>
+<div class="line number8 index7 alt1"><code class="lua spaces">     </code><code class="lua comments">-- 將物體設定為非靜態，讓其在模擬中發生動態運動</code></div>
+<div class="line number9 index8 alt2"><code class="lua spaces">     </code><code class="lua plain">nominalForce = 0.001</code></div>
+<div class="line number10 index9 alt1"><code class="lua spaces">     </code><code class="lua comments">-- 設定電磁吸引力的標準值</code></div>
+<div class="line number11 index10 alt2"><code class="lua spaces">     </code><code class="lua plain">enabled = </code><code class="lua keyword">true</code></div>
+<div class="line number12 index11 alt1"><code class="lua spaces">     </code><code class="lua comments">-- 啟用電磁吸引力</code></div>
+<div class="line number13 index12 alt2"><code class="lua spaces">     </code><code class="lua plain">previousPos = sim.getObjectPosition(shape, sim.handle_world)</code></div>
+<div class="line number14 index13 alt1"><code class="lua spaces">     </code><code class="lua comments">-- 取得物體的初始位置並儲存在 previousPos 變數中，用於偵測物體是否移動</code></div>
+<div class="line number15 index14 alt2"><code class="lua keyword">end</code></div>
+<div class="line number16 index15 alt1"> </div>
+<div class="line number17 index16 alt2"><code class="lua keyword">function</code> <code class="lua plain">sysCall_actuation()</code></div>
+<div class="line number18 index17 alt1"><code class="lua spaces">     </code><code class="lua comments">-- 驅動 callback 函數，在每個模擬步驟中執行</code></div>
+<div class="line number19 index18 alt2"><code class="lua spaces">     </code><code class="lua keyword">if</code> <code class="lua plain">enabled </code><code class="lua keyword">then</code></div>
+<div class="line number20 index19 alt1"><code class="lua spaces">         </code><code class="lua comments">-- 如果啟用電磁吸引力，執行下列程式碼</code></div>
+<div class="line number21 index20 alt2"><code class="lua spaces">         </code><code class="lua keyword">local</code> <code class="lua plain">r, dist, pt, obj = sim.handleProximitySensor(sensor)</code></div>
+<div class="line number22 index21 alt1"><code class="lua spaces">         </code><code class="lua comments">-- 使用 proximity 感測器偵測物體是否接近</code></div>
+<div class="line number23 index22 alt2"><code class="lua spaces">         </code><code class="lua keyword">if</code> <code class="lua plain">r &gt; 0 </code><code class="lua keyword">then</code></div>
+<div class="line number24 index23 alt1"><code class="lua spaces">             </code><code class="lua comments">-- 如果偵測到物體</code></div>
+<div class="line number25 index24 alt2"><code class="lua spaces">             </code><code class="lua plain">dist = dist + 0.02</code></div>
+<div class="line number26 index25 alt1"><code class="lua spaces">             </code><code class="lua comments">-- 增加一個 offset，以避免物體接觸時產生無限大的吸引力</code></div>
+<div class="line number27 index26 alt2"><code class="lua spaces">             </code><code class="lua keyword">local</code> <code class="lua plain">force = nominalForce / (dist * dist)</code></div>
+<div class="line number28 index27 alt1"><code class="lua spaces">             </code><code class="lua comments">-- 計算吸引力的大小，與距離的平方成反比</code></div>
+<div class="line number29 index28 alt2"><code class="lua spaces">             </code><code class="lua keyword">local</code> <code class="lua plain">m = sim.getObjectMatrix(shape, sim.handle_world)</code></div>
+<div class="line number30 index29 alt1"><code class="lua spaces">             </code><code class="lua plain">m[4] = 0</code></div>
+<div class="line number31 index30 alt2"><code class="lua spaces">             </code><code class="lua plain">m[8] = 0</code></div>
+<div class="line number32 index31 alt1"><code class="lua spaces">             </code><code class="lua plain">m[12] = 0</code></div>
+<div class="line number33 index32 alt2"><code class="lua spaces">             </code><code class="lua comments">-- 取得物體的轉換矩陣，不考慮平移部分</code></div>
+<div class="line number34 index33 alt1"><code class="lua spaces">             </code><code class="lua keyword">local</code> <code class="lua plain">forceVector = sim.multiplyVector(m, {0, 0, force})</code></div>
+<div class="line number35 index34 alt2"><code class="lua spaces">             </code><code class="lua comments">-- 將力向量從局部座標系轉換為絕對座標系</code></div>
+<div class="line number36 index35 alt1"><code class="lua spaces">             </code><code class="lua plain">sim.addForceAndTorque(shape, forceVector, {0, 0, 0})</code></div>
+<div class="line number37 index36 alt2"><code class="lua spaces">             </code><code class="lua comments">-- 將計算得到的力應用於物體的質心，持續一個 time step</code></div>
+<div class="line number38 index37 alt1"><code class="lua spaces">             </code><code class="lua keyword">if</code> <code class="lua plain">notFirstPass </code><code class="lua keyword">then</code></div>
+<div class="line number39 index38 alt2"><code class="lua spaces">                 </code><code class="lua keyword">local</code> <code class="lua plain">p = sim.getObjectPosition(shape, sim.handle_world)</code></div>
+<div class="line number40 index39 alt1"><code class="lua spaces">                 </code><code class="lua keyword">local</code> <code class="lua plain">dx = {p[1] - previousPos[1], p[2] - previousPos[2], p[3] - previousPos[3]}</code></div>
+<div class="line number41 index40 alt2"><code class="lua spaces">                 </code><code class="lua keyword">local</code> <code class="lua plain">d = </code><code class="lua functions">math.sqrt</code><code class="lua plain">(dx[1] * dx[1] + dx[2] * dx[2] + dx[3] * dx[3])</code></div>
+<div class="line number42 index41 alt1"><code class="lua spaces">                 </code><code class="lua comments">-- 計算物體是否移動</code></div>
+<div class="line number43 index42 alt2"><code class="lua spaces">                 </code><code class="lua keyword">if</code> <code class="lua plain">d &lt; 0.0001 </code><code class="lua keyword">then</code></div>
+<div class="line number44 index43 alt1"><code class="lua spaces">                     </code><code class="lua plain">sim.setObjectInt32Param(shape, sim.shapeintparam_static, 1)</code></div>
+<div class="line number45 index44 alt2"><code class="lua spaces">                     </code><code class="lua plain">sim.resetDynamicObject(shape)</code></div>
+<div class="line number46 index45 alt1"><code class="lua spaces">                     </code><code class="lua plain">enabled = </code><code class="lua keyword">false</code></div>
+<div class="line number47 index46 alt2"><code class="lua spaces">                     </code><code class="lua comments">-- 如果物體沒有移動，將其設為靜態</code></div>
+<div class="line number48 index47 alt1"><code class="lua spaces">                 </code><code class="lua keyword">end</code></div>
+<div class="line number49 index48 alt2"><code class="lua spaces">                 </code><code class="lua plain">previousPos = p</code></div>
+<div class="line number50 index49 alt1"><code class="lua spaces">             </code><code class="lua keyword">end</code></div>
+<div class="line number51 index50 alt2"><code class="lua spaces">         </code><code class="lua keyword">end</code></div>
+<div class="line number52 index51 alt1"><code class="lua spaces">     </code><code class="lua keyword">end</code></div>
+<div class="line number53 index52 alt2"><code class="lua spaces">     </code><code class="lua plain">notFirstPass = </code><code class="lua keyword">true</code></div>
+<div class="line number54 index53 alt1"><code class="lua keyword">end</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>
+<script src="https://unpkg.com/three@0.144.0/build/three.js" type="text/javascript"></script>
+</p><br />任務一 << <a href='任務一.html'>Previous</a> </div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
