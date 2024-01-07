@@ -1212,6 +1212,34 @@ doc["threejsblock"].bind("click", threejsblock.do)
 <p><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><img alt="" height="240" src="/images/還.png" width="337"/></span></span></span></span></p>
 <h4><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">繪圖心得：</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></h4>
 <h4><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">在作畫方面又學到了不過幾張不同的熟圖軟體，雖然還不夠，這幾張作圖軟體大同小異，把畫好的圖傳到自己的網站上，感覺極棒了</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></h4>
+<h1>任務一</h1>
+<hr/>
+<p>2023.09.14 上午 2b 上課時段, 之所以沒有 IPv6 網路連線的原因是:<span> </span><span>BGA-0810-S 網管集線器的 port 24 硬體故障</span>, 無法從工作站室取得機械設計系網路主幹訊號.</p>
+<p>在 Replit Python 環境中就是內建 Python3, 因此安裝模組必須使用 pip 而非一般 Linux 環境中使用的 pip3:</p>
+<p>以 import 將倉儲從 github 導入後, 必須使用 git submodule update --init 取下 cmsimde 子模組內容 (因為 Replit import 不會自動取下倉儲對應的子模組).</p>
+<p>取下子模組之後, 以 Run 嘗試以 Python3 執行 main.py, 讓 Replit 自行調適所需的 Python3 環境, 結果會顯示缺少啟動 cmsimde 網站的模組, 再以下列指令在 Shell 頁面安裝所需模組:</p>
+<p>pip install flask flask_cors bs4 lxml markdown pelican gevent</p>
+<p>其中 flask 為 Python 網際框架, flask_cors 則允許跨網域擷取資料的 flask 延伸模組, bs4 與 lxml 用於超文件分頁, markdown 與 pelican 則允許使用者採 Markdown 格式編寫網誌內容, 並且利用 Pelican 套件轉為 html 格式的網誌文章. 至於 gevent 則是 Replit 內建使用的同步網路程式庫.</p>
+<p>手動載下倉儲子模組, 試以 Run 執行之後再安裝 cmsimde 編輯網站所需模組, 應該就可以利用 Run 啟動倉儲對應的動態網站.</p>
+<p>最後, 為了保全網站登入的管理者密碼編碼, 還需要在 Secrets 頁面中建立 config 變數, 並將近端 config/config 所修改的管理者密碼編碼登錄至 config 變數.</p>
+<hr/>
+<p>請自選 CAD 套件, 依照下列圖示, 以能將此系統放在電腦桌上作為參考尺寸, 繪製所需的零組件, 並將各零組件檔案與畫面上傳至個人的 Onedrive, 或以 Onshape 上的公開連結展示所完成的資料.</p>
+<p>最後在個人的<span> </span><span>帳號.github.io/cad2023</span><span> </span>網站上呈現任務一所完成的結果 (請以 H1 且標題為任務一建立網頁).</p>
+<p>有關電腦輔助設計繪圖套件:</p>
+<p>機械設計工程系所提供的 SolidWorks 與 NX 都必須在啟動時, 透過網路至分別位於校本部與系上的認證主機進行登錄, 才能開啟. 其中 Siemens<span> </span><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EdHAOThcQztGj4EZy5Duab0Bvcf3AbzsC_MLsCfmwBXAFg?e=4dPh6O">NX2027.3401_lite_cad2022.7z</a><span> </span>(需要下載密碼) 可以放入隨身碟, 在任一台 Windows 64 位元的電腦上, 連接網路取得認證後開啟.</p>
+<p>Siemens Solid Edge 則提供<span> </span><a href="https://resources.sw.siemens.com/en-US/download-solid-edge-community-edition">Community 版本</a>, 安裝後無需上網即可使用, 在電腦輔助設計室則可以下載<span> </span><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EVZctF66LE1BkQCL4mvFEGgB51yXmcukoLae6LflsrC_Og?e=2XrhTB">se_portable_X_for_cad2023.7z</a><span> </span>(需要下載密碼), 放入隨身碟後, 先執行所附的系統組態批次檔後, 直接以批次檔案開啟.</p>
+<p><a href="https://solvespace.com/">Solvespace</a><span> </span>則適合在初步設計階段, 提供尺寸規劃或外型較為簡單的零組件繪製.</p>
+<p><img alt="" height="264" src="https://mde.tw/cadnote/images/electromagnetic_activated_cyclic_circulation_motion_system.gif" width="400"/></p>
+<p>零組件繪圖完成後, 請轉為 STL 格式轉入 CoppeliaSim 進行機電系統模擬.</p>
+<p>下載<span> </span><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EfEaYO4E4eBGtTV3QBCP0f0B3JBfrw11LslWmQyqZB75fw?e=Zf7hCp">CoppeliaSimEdu_4.5.1_rev4_for_cd2023.7z</a><span> </span>(需要下載密碼)</p>
+<p><a href="https://www.coppeliarobotics.com/helpFiles/">CoppeliaSim 使用者手冊</a>,<span> </span><a href="https://mde.tw/pjcopsim">CoppeliaSim 4.3.0 使用手冊網站</a></p>
+<p>References:</p>
+<p><a href="https://homes.cs.washington.edu/~todorov/papers/ErezICRA15.pdf">Simulation Tools for Model-Based Robotics: Comparison of Bullet, Havok, MuJoCo, ODE and PhysX</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Tautochrone_curve">Tautochrone curve - Wikipedia</a> </p>
+<p><a href="https://userpages.umbc.edu/~rostamia/pubs/rolling-ball.pdf">rolling-ball.pdf (umbc.edu)</a></p>
+<p><a href="https://doi.org/10.1063/5.0047955">Modelling of the force state of contact of a ball rolling along the boundaries of two rails</a></p>
+<p><a href="https://link.springer.com/article/10.1007/s11012-018-0904-5">On the dynamics of a rolling ball actuated by internal point masses</a></p>
+<p><a href="https://arxiv.org/abs/1708.03829">On the Optimal Control of a Rolling Ball Robot Actuated by Internal Point Masses</a></p>
 <p>
 <script src="https://unpkg.com/three@0.144.0/build/three.js" type="text/javascript"></script>
 </p>
