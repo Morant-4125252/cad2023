@@ -1130,7 +1130,38 @@ doc["threejsblock"].bind("click", threejsblock.do)
 <p><a href="https://deepreinforcementlearningbook.org/docs/Chap%2016.%20Robot%20Learning%20in%20Simulation/">Deep RL</a><span> </span>(<a href="https://link.springer.com/book/10.1007/978-981-15-4095-0">ebook on Springer</a>)</p>
 <p><a href="https://github.com/moliqingwa/coppeliasim_deeprl">https://github.com/moliqingwa/coppeliasim_deeprl</a></p>
 <h1>w15</h1>
-<h4>專案二</h4>
+<p><span>操作考試</span>: 請利用自選的電腦輔助設計套件建立<span> </span><a href="https://mde.tw/cadnote/content/pms.html">https://mde.tw/cadnote/content/pms.html</a>  中的零組件 (尺寸與操控內容請自訂), 並加入感測器與適當的設計元件或機構, 說明預計如何令其在接上外部電源後, 能夠讓系統中的鋼球在軌道上進行永動模擬.</p>
+<p>完成零組件與可行系統設計後, 請將零組件轉入 CoppeliaSim 建立模擬場景, 並在分組中自選另一名組員, 經過彼此討論後, 請利用 ZMQ remote API Python 程式互相控制對方的永動模擬場景, 以便完成兩人一組的兩則永動機模擬操作 (若找不到協同對象, 請自行用所分配到的 IPv6 位址進行控制模擬).</p>
+<p>完成上述兩人一組的現場操作考試後, 請利用 Wink 製作 MP4 操作影片, 說明從零組件繪圖至完成互動控制模擬後的各階段細節, 並將上述各項內容放入個人倉儲與網站 (頁面標題請用第一階設定, 名稱為 exam).</p>
+<p>step1: 基本零組件設計繪圖.</p>
+<p>step2: 施力機構設計, 納入軌道下方控制盒中.</p>
+<p>step3: 將軌道、鋼球與簡化後的控制盒輸入 CoppeliaSim.</p>
+<p>step4: 配合控制系統設計, 納入感測器與施力機構或系統.</p>
+<p>step5: 在 localhost 以 IPv6 ZMQ remote API Python 程式, 配合感測器作動對鋼球施力.</p>
+<p>step6: 跨網路對協同組員的場景進行控制模擬.</p>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" data-mce-fragment="1" frameborder="0" height="315" src="https://www.youtube.com/embed/O-FKcK0vzgY?si=Ci-reYmxMRDYzUZN" title="YouTube video player" width="560"></iframe></p>
+<p>截至 2023.12.22 Replit 仍可用來維護 Github 倉儲中的對應網站內容, 且可透過下列 html 將 Repl 嵌入網頁中:</p>
+<div>
+<div class="syntaxhighlighter html" id="highlighter_258767">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">iframe</code> <code class="html color1">frameborder</code><code class="html plain">=</code><code class="html string">"0"</code> <code class="html color1">width</code><code class="html plain">=</code><code class="html string">"100%"</code> <code class="html color1">height</code><code class="html plain">=</code><code class="html string">"400"</code> <code class="html color1">src</code><code class="html plain">=</code><code class="html string">"https://replit.com/@wcms/cadnote?embed=true"</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">iframe</code><code class="html plain">&gt;</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><iframe data-mce-fragment="1" frameborder="0" height="400px" src="https://replit.com/@wcms/cadnote?embed=true" width="100%"></iframe></p>
+<p><span>例如要查詢埠號 9210 埠號的使用情形, 指令為 </span><span>lsof -i :9210, 其中 ls 為 list, of 為 open file, -i 中的 i 為 internet, :9210 表示要求列出與 port 9210 有關 internet 使用相關的資料.</span></p>
+<h2>專案二</h2>
 <p><img alt="" height="269" src="/images/未命名1.png" width="501"/></p>
 <p><img alt="" height="255" src="/images/未命名2.png" width="500"/></p>
 <p><img alt="" height="265" src="/images/未命名3.png" width="503"/></p>
